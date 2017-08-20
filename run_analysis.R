@@ -1,10 +1,10 @@
 ## run_analysis.R script
-
-# 415-515
-
-#GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
-#The README that explains the analysis files is clear and understandable.
-
+# This script starts by importing the activity and feature name files.
+# Then, working with the test data, it imports all files and merges them into one
+# data set, aggregating multiple data points into means and standard deviations for
+# each observation. This is then repeated for the train data. The two sets are combined.
+# Finally, a new set is created creating an average by aggregating the observations
+# on a combination of subject and activity.
 
 # Load code mappings for activities and features
 activity_labels <- read.table("./data/activity_labels.txt")
